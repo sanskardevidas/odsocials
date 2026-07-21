@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =========================
+   GLOBAL BASE
+   ========================= */
+html, body, #root {
+  height: 100%;
+  background: #07070B;
+  color: white;
+}
+
+/* =========================
+   CLICK FIX (MOST IMPORTANT)
+   Reason: overlays OR ::before/::after are sitting above buttons
+   ========================= */
+
+/* 1) NEVER allow pseudo-elements to eat clicks */
+*::before,
+*::after {
+  pointer-events: none !important;
+}
+
+/* 2) App should always accept pointer events */
+#root, body, html {
+  pointer-events: auto !important;
+}
+
+/* 3) Common full-screen decorative layers must be click-through */
+.absolute.inset-0,
+.fixed.inset-0,
+[class*="absolute"][class*="inset-0"],
+[class*="fixed"][class*="inset-0"] {
+  pointer-events: none !important;
+}
+
+/* 4) Canvas must never block clicks */
+canvas {
+  pointer-events: none !important;
+}
+
+/* 5) Ensure interactive elements ALWAYS clickable */
+a, button, input, textarea, select, label {
+  pointer-events: auto !important;
+}
