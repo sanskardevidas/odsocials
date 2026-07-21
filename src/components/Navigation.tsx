@@ -60,49 +60,52 @@ export default function Navigation() {
       <div className="backdrop-blur-md bg-black/30 border-b border-white/5">
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
           {/* LOGO */}
-<div
-  onClick={() => navigate("/")}
-  className="
-    relative
-    w-9 h-9
-    rounded-full
-    flex items-center justify-center
-    cursor-pointer
-    transition-transform duration-300
-    hover:scale-110
-  "
->
-  {/* glow */}
-  <span
-    className="
-      absolute inset-0
-      rounded-full
-      bg-purple-500/30
-      blur-xl
-      opacity-60
-      pointer-events-none
-    "
-  />
-
-  {/* logo holder */}
-  <div
-    className="
-      w-9 h-9
-      rounded-full
-      bg-black
-      flex items-center justify-center
-      overflow-hidden
-      ring-1 ring-white/10
-    "
-  >
-    <img
-      src="/od-logo.png"
-      alt="OD Socials"
-      className="w-6 h-6 object-contain"
-      draggable={false}
-    />
-  </div>
-</div>
+          <div
+            onClick={() => navigate("/")}
+            className="
+              relative
+              w-9 h-9
+              rounded-full
+              flex items-center justify-center
+              cursor-pointer
+              transition-transform duration-300
+              hover:scale-110
+              "
+          >
+          {/* glow */}
+          <span
+            className="
+              absolute inset-0
+              rounded-full
+              bg-purple-500/30
+              blur-xl    
+              opacity-60     
+              pointer-events-none
+              "
+          />
+          {/* logo holder */}
+          <div
+            className="
+              w-10 h-10
+              rounded-full      
+              bg-white    
+              flex items-center justify-center   
+              overflow-hidden     
+              ring-1 ring-white/20     
+              shadow-[0_0_25px_rgba(255,255,255,0.18)]     
+              transition-all duration-300 
+              hover:scale-105
+              hover:shadow-[0_0_35px_rgba(255,255,255,0.28)]
+              "
+          >
+            <img
+              src="/od-logo.png"    
+              alt="OD Socials"     
+              className="w-6 h-6 object-contain"     
+              draggable={false}
+            />
+          </div>
+        </div>
           {/* DESKTOP NAV */}
           <nav className="hidden md:flex items-center gap-8">
             <NavLink to="/" className={linkClass}>
