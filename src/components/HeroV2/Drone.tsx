@@ -36,7 +36,7 @@ export default function Drone({ targetRef }: DroneProps) {
       // ----------------------------
       const headingRect = targetRef.current!.getBoundingClientRect();
 
-      const headingX = headingRect.left + headingRect.width / 2;
+      const headingX = headingRect.right - 60;
       const headingY = headingRect.top + headingRect.height / 2;
 
       // ----------------------------

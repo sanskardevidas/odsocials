@@ -24,23 +24,30 @@ export default function Navbar() {
         {/* Navigation */}
 
         <nav className="flex items-center gap-16">
-
-          <NavLink to="/">
-            Home
+          <NavLink
+            to="/"
+            className="text-[18px] font-medium text-black transition-colors duration-300 hover:text-neutral-500"
+            >
+              Home
           </NavLink>
-
-          <NavLink to="/social-media">
+          <NavLink
+            to="/social-media"
+            className="text-[18px] font-medium text-black transition-colors duration-300 hover:text-neutral-500"
+          >
             Social Media
           </NavLink>
-
-          <NavLink to="/website">
+          <NavLink
+            to="/website"
+            className="text-[18px] font-medium text-black transition-colors duration-300 hover:text-neutral-500"
+          >
             Website
           </NavLink>
-
-          <NavLink to="/ai-automation">
+          <NavLink
+            to="/ai-automation"
+            className="text-[18px] font-medium text-black transition-colors duration-300 hover:text-neutral-500"
+          >
             AI Automation
           </NavLink>
-
         </nav>
 
         {/* Button */}
