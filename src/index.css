@@ -44,3 +44,19 @@ canvas {
 a, button, input, textarea, select, label {
   pointer-events: auto !important;
 }
+/* =========================
+   LENIS
+========================= */
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}

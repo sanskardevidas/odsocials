@@ -1,4 +1,4 @@
-import React from "react";
+{/*import React from "react";
 import { NavLink, useNavigate, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import Button from "./Button";
@@ -54,13 +54,14 @@ export default function Navigation() {
       navigate("/#contact");
     }
   };
+*/}
 
-  return (
+  {/* return (
     <header className="fixed top-0 left-0 right-0 z-50">
       <div className="backdrop-blur-md bg-black/30 border-b border-white/5">
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-          {/* LOGO */}
-          <div
+          {/* LOGO */} 
+          {/*<div
             onClick={() => navigate("/")}
             className="
               relative
@@ -73,7 +74,7 @@ export default function Navigation() {
               "
           >
           {/* glow */}
-          <span
+          {/*<span
             className="
               absolute inset-0
               rounded-full
@@ -84,7 +85,7 @@ export default function Navigation() {
               "
           />
           {/* logo holder */}
-          <div
+          {/*<div
             className="
               w-10 h-10
               rounded-full      
@@ -107,7 +108,7 @@ export default function Navigation() {
           </div>
         </div>
           {/* DESKTOP NAV */}
-          <nav className="hidden md:flex items-center gap-8">
+          {/*<nav className="hidden md:flex items-center gap-8">
             <NavLink to="/" className={linkClass}>
               Home
             </NavLink>
@@ -124,14 +125,14 @@ export default function Navigation() {
 
           <div className="flex items-center gap-3">
             {/* DESKTOP CTA */}
-            <div className="hidden md:flex">
+            {/*<div className="hidden md:flex">
               <Button variant="secondary" onClick={goContact}>
                 Start a Project
               </Button>
             </div>
 
             {/* MOBILE MENU BUTTON */}
-            <button
+            {/*<button
               className="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full border border-white/10 bg-white/5 hover:bg-white/10 transition"
               onClick={() => setOpen((v) => !v)}
               aria-label={open ? "Close menu" : "Open menu"}
@@ -143,16 +144,16 @@ export default function Navigation() {
       </div>
 
       {/* MOBILE OVERLAY + PANEL */}
-      {open && (
+      {/*{open && (
         <div className="md:hidden fixed inset-0 z-50">
           {/* overlay */}
-          <div
+          {/*<div
             className="absolute inset-0 bg-black/60 backdrop-blur-sm"
             onClick={closeMenu}
           />
 
           {/* panel */}
-          <div className="absolute top-16 left-0 right-0 px-4">
+          {/*<div className="absolute top-16 left-0 right-0 px-4">
             <div className="rounded-3xl border border-white/10 bg-gradient-to-b from-white/10 via-white/5 to-transparent backdrop-blur-xl shadow-[0_20px_80px_rgba(0,0,0,0.55)] overflow-hidden">
               <div className="p-3">
                 <NavLink to="/" className={mobileLinkClass} onClick={closeMenu}>
@@ -188,7 +189,7 @@ export default function Navigation() {
               </div>
 
               {/* subtle purple glow line */}
-              <div className="h-px w-full bg-gradient-to-r from-transparent via-purple-500/40 to-transparent" />
+              {/*<div className="h-px w-full bg-gradient-to-r from-transparent via-purple-500/40 to-transparent" />
             </div>
           </div>
         </div>
@@ -196,3 +197,4 @@ export default function Navigation() {
     </header>
   );
 }
+*/}
