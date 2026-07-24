@@ -180,16 +180,19 @@ const InstagramReveal = forwardRef<InstagramRevealHandle, InstagramRevealProps>(
       <div
         ref={containerRef}
         className={`
-        pointer-events-none
-        absolute
-        left-[-160px]
-        top-[300%]
-        ml-6
-        -translate-y-1/2
-        z-[8]
-        overflow-visible
-        ${className}
-      `}
+          pointer-events-none
+          absolute
+          left-[-160px]
+          top-[300%]
+          ml-6
+          -translate-y-1/2z-[8]
+          z-[8]
+          overflow-visible
+          
+          max-md:hidden
+
+          ${className}
+        `}
         aria-hidden={!isOpen}
       >
         <motion.div
