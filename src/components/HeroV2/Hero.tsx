@@ -37,8 +37,10 @@ export default function Hero() {
       {/* Decorative Icons */}
       <FloatingElements />
 
-      {/* Drone */}
-      <HeroDrone targetRef={headingRef} />
+      {/* Drone (Hidden on Mobile) */}
+      <div className="hidden md:block">
+        <HeroDrone targetRef={headingRef} />
+      </div>
 
       {/* Hero Content */}
       <div
