@@ -65,15 +65,46 @@ export default function Home() {
     {/* HERO */}
     <Hero />
     
-      
       {/* SECTION 2 */}
-      <SwipeInSection className="min-h-[60vh] flex items-center justify-center px-4 sm:px-6 py-20 sm:py-32">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl sm:text-5xl md:text-7xl font-serif mb-8 leading-tight text-white">
-            We Don&apos;t Guess. We Build Systems.
+
+      <SwipeInSection
+        className="
+          mx-4
+          sm:mx-8
+          lg:mx-12
+        "
+      >
+        <div className="mx-auto max-w-5xl text-center">
+          <h2
+            className="
+              text-white
+              text-4xl
+              sm:text-5xl
+              md:text-6xl
+              lg:text-7xl
+              leading-[1.05]
+              font-serif
+            "
+          >
+            We Don&apos;t Guess.
+            <br />
+            We Build Systems.
           </h2>
-          <p className="text-lg sm:text-xl text-white/60 leading-relaxed">
-            Growth doesn&apos;t come from random actions. It comes from structure, clarity, and repeatable systems.
+
+          <p
+            className="
+              mx-auto
+              mt-8
+              max-w-3xl
+              text-base
+              sm:text-lg
+              lg:text-xl
+              leading-relaxed
+              text-white/70
+            "
+          >
+            Growth doesn&apos;t come from random actions. It comes from structure,
+            clarity, and repeatable systems.
           </p>
         </div>
       </SwipeInSection>
