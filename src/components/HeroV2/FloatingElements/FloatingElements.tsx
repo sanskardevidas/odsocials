@@ -27,20 +27,28 @@ export default function FloatingElements({
         className={`${common}
           pointer-events-auto
 
-          left-6 top-28
+          left-6
+          top-28
 
-          md:left-[6%] md:top-[14%]
+          md:left-[6%]
+          md:top-[14%]
 
-          lg:left-[8%] lg:top-[18%]
+          lg:left-[8%]
+          lg:top-[18%]
         `}
       >
         <MotionButton />
       </div>
 
-      {/* Camera (Hide on Mobile) */}
+      {/* Camera */}
       <div
         className={`${common}
-          hidden md:block
+
+          left-4
+          top-[46%]
+
+          sm:left-5
+          sm:top-[43%]
 
           md:left-[4%]
           md:top-[48%]
@@ -52,6 +60,8 @@ export default function FloatingElements({
         <Camera
           strokeWidth={1.6}
           className="
+            w-10 h-10
+            sm:w-12 sm:h-12
             md:w-[68px] md:h-[68px]
             lg:w-[92px] lg:h-[92px]
           "
@@ -62,7 +72,8 @@ export default function FloatingElements({
       <div
         className={`${common}
 
-          left-5 bottom-16
+          left-5
+          bottom-16
 
           md:left-[8%]
           md:bottom-[15%]
@@ -85,7 +96,11 @@ export default function FloatingElements({
       <div
         className={`${common}
 
-          right-5 top-[38%]
+          right-4
+          top-[22%]
+
+          sm:right-5
+          sm:top-[20%]
 
           md:right-[6%]
           md:top-[42%]
@@ -97,7 +112,8 @@ export default function FloatingElements({
         <Facebook
           strokeWidth={1.6}
           className="
-            w-10 h-10
+            w-9 h-9
+            sm:w-10 sm:h-10
             md:w-[52px] md:h-[52px]
             lg:w-[74px] lg:h-[74px]
           "
@@ -108,7 +124,8 @@ export default function FloatingElements({
       <div
         className={`${common}
 
-          right-5 bottom-12
+          right-5
+          bottom-12
 
           md:right-[7%]
           md:bottom-[23%]
@@ -127,7 +144,7 @@ export default function FloatingElements({
         />
       </div>
 
-      {/* Analytics (Hide on Mobile) */}
+      {/* Analytics */}
       <div
         className={`${common}
           hidden md:block
