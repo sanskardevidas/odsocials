@@ -280,7 +280,7 @@ function Services() {
         {services.map((service) => (
           <div
             key={service.title}
-            className="group rounded-2xl border border-white/10 bg-white/[0.02] hover:bg:white/[0.04] hover:border-[#00C16A]/40 transition shadow-[0_18px_60px_rgba(0,0,0,0.7)]"
+            className="group rounded-2xl border border-white/10 bg-white/[0.02] hover:bg-white/[0.04] hover:border-[#00C16A]/40 transition shadow-[0_18px_60px_rgba(0,0,0,0.7)]"
           >
             <div className="p-4 sm:p-5 space-y-3">
               <span className="inline-flex text-[11px] px-2 py-1 rounded-full bg-[#00C16A]/10 text-[#00C16A] border border-[#00C16A]/30">

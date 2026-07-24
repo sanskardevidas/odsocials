@@ -1,8 +1,10 @@
+import Hero from "../components/HeroV2/Hero";
+import SwipeInSection from "../components/SwipeInSection";
 import "@fontsource/instrument-serif";
 import ContactSection from "../components/ContactSection";
 import { Camera, Layout, Zap } from "lucide-react";
 import React from "react";
-import Hero from "../components/HeroV2/Hero";
+
 
 const brandLogos = [
   { src: '/brands/adnovalogo.png', alt: 'Adnova' },
@@ -63,21 +65,18 @@ export default function Home() {
     {/* HERO */}
     <Hero />
     
+      
       {/* SECTION 2 */}
-      <section className="min-h-[60vh] flex items-center justify-center px-6 py-32 relative">
+      <SwipeInSection className="min-h-[60vh] flex items-center justify-center px-4 sm:px-6 py-20 sm:py-32">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-5xl md:text-7xl font-serif mb-8 leading-tight">
-            We Don't Guess.
-            <br />
-            We Build Systems.
+          <h2 className="text-4xl sm:text-5xl md:text-7xl font-serif mb-8 leading-tight text-white">
+            We Don&apos;t Guess. We Build Systems.
           </h2>
-          <p className="text-xl text-gray-400 leading-relaxed">
-            Growth doesn't come from random actions.
-            <br />
-            It comes from structure, clarity, and repeatable systems.
+          <p className="text-lg sm:text-xl text-white/60 leading-relaxed">
+            Growth doesn&apos;t come from random actions. It comes from structure, clarity, and repeatable systems.
           </p>
         </div>
-      </section>
+      </SwipeInSection>
 
       {/* SERVICES (What We Build) — same “What We Do” UI, but cleaner + better */}
 <section id="services" className="py-32 px-6 relative">
