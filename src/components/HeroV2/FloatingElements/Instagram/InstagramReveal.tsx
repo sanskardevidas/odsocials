@@ -182,7 +182,7 @@ const InstagramReveal = forwardRef<InstagramRevealHandle, InstagramRevealProps>(
         className={`
           pointer-events-none
           absolute
-          left-[-160px]
+          left-[-170px]
           top-[300%]
           ml-6
           -translate-y-1/2z-[8]
