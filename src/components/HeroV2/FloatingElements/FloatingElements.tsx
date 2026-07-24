@@ -1,56 +1,50 @@
 import {
-  Instagram,
   Facebook,
   Camera,
   Monitor,
   Cpu,
   BarChart3,
 } from "lucide-react";
+import MotionButton from "./Instagram/MotionButton";
 
+type FloatingElementsProps = {
+  onInstagramEnter?: () => void;
+  onInstagramLeave?: () => void;
+};
 const common =
-  "absolute pointer-events-none select-none text-black/70 transition-all duration-500";
+  "absolute select-none text-black/70 transition-all duration-500";
 
-export default function FloatingElements() {
+export default function FloatingElements({
+  onInstagramEnter,
+  onInstagramLeave,
+}: FloatingElementsProps) {
   return (
-    <div className="absolute inset-0 z-10 overflow-hidden">
+    <div className="absolute inset-0 overflow-hidden z-10">
 
       {/* Instagram */}
-
       <div
         className={`${common}
-
+          pointer-events-auto
           left-[8%] top-[12%]
-
-          sm:left-[10%] sm:top-[14%]
-
-          md:left-[7%] md:top-[16%]
-
-          lg:left-[8%] lg:top-[17%]
+          sm:left-[9%] sm:top-[13%]
+          md:left-[7%] md:top-[15%]
+          lg:left-[8%] lg:top-[18%]
         `}
       >
-        <Instagram
-          strokeWidth={1.6}
-          className="
-            w-9 h-9
-            sm:w-11 sm:h-11
-            md:w-14 md:h-14
-            lg:w-[70px] lg:h-[70px]
-          "
-        />
+        <MotionButton />
       </div>
 
       {/* Camera */}
 
       <div
         className={`${common}
+          left-[6%] top-[33%]
 
-          left-[6%] top-[68%]
+          sm:left-[7%] sm:top-[38%]
 
-          sm:left-[7%] sm:top-[65%]
+          md:left-[5%] md:top-[48%]
 
-          md:left-[5%] md:top-[54%]
-
-          lg:left-[5%] lg:top-[45%]
+          lg:left-[5%] lg:top-[46%]
         `}
       >
         <Camera
@@ -58,7 +52,7 @@ export default function FloatingElements() {
           className="
             w-12 h-12
             sm:w-14 sm:h-14
-            md:w-[72px] md:h-[72px]
+            md:w-[70px] md:h-[70px]
             lg:w-[92px] lg:h-[92px]
           "
         />
@@ -68,14 +62,13 @@ export default function FloatingElements() {
 
       <div
         className={`${common}
+          left-[8%] bottom-[9%]
 
-          left-[8%] bottom-[8%]
+          sm:left-[9%] sm:bottom-[10%]
 
-          sm:left-[9%] sm:bottom-[8%]
+          md:left-[9%] md:bottom-[15%]
 
-          md:left-[10%] md:bottom-[8%]
-
-          lg:left-[10%] lg:bottom-[8%]
+          lg:left-[10%] lg:bottom-[18%]
         `}
       >
         <Monitor
@@ -93,14 +86,13 @@ export default function FloatingElements() {
 
       <div
         className={`${common}
+          right-[8%] top-[24%]
 
-          right-[8%] top-[66%]
+          sm:right-[9%] sm:top-[26%]
 
-          sm:right-[8%] sm:top-[60%]
+          md:right-[6%] md:top-[42%]
 
-          md:right-[5%] md:top-[50%]
-
-          lg:right-[7%] lg:top-[42%]
+          lg:right-[7%] lg:top-[44%]
         `}
       >
         <Facebook
@@ -118,21 +110,20 @@ export default function FloatingElements() {
 
       <div
         className={`${common}
+          right-[8%] bottom-[21%]
 
-          right-[8%] bottom-[24%]
+          sm:right-[8%] sm:bottom-[22%]
 
-          sm:right-[9%] sm:bottom-[23%]
+          md:right-[7%] md:bottom-[23%]
 
-          md:right-[8%] md:bottom-[22%]
-
-          lg:right-[9%] lg:bottom-[24%]
+          lg:right-[9%] lg:bottom-[28%]
         `}
       >
         <Cpu
           strokeWidth={1.6}
           className="
             w-11 h-11
-            sm:w-13 sm:h-13
+            sm:w-14 sm:h-14
             md:w-[64px] md:h-[64px]
             lg:w-[86px] lg:h-[86px]
           "
@@ -143,14 +134,13 @@ export default function FloatingElements() {
 
       <div
         className={`${common}
+          right-[16%] bottom-[9%]
 
-          right-[16%] bottom-[8%]
+          sm:right-[17%] sm:bottom-[10%]
 
-          sm:right-[16%] sm:bottom-[8%]
+          md:right-[16%] md:bottom-[15%]
 
-          md:right-[15%] md:bottom-[8%]
-
-          lg:right-[18%] lg:bottom-[8%]
+          lg:right-[18%] lg:bottom-[18%]
         `}
       >
         <BarChart3
@@ -170,12 +160,11 @@ export default function FloatingElements() {
 
       <span className="hidden lg:block absolute left-[10%] top-[42%] h-1.5 w-1.5 rounded-full bg-black/40" />
 
-      <span className="absolute bottom-[14%] left-[28%] h-1.5 w-1.5 rounded-full bg-black/40" />
+      <span className="absolute bottom-[18%] left-[28%] h-1.5 w-1.5 rounded-full bg-black/40" />
 
       <span className="hidden sm:block absolute right-[15%] top-[24%] h-2 w-2 rounded-full bg-black/40" />
 
-      <span className="absolute bottom-[14%] right-[28%] h-1.5 w-1.5 rounded-full bg-black/40" />
-
+      <span className="absolute bottom-[18%] right-[28%] h-1.5 w-1.5 rounded-full bg-black/40" />
     </div>
   );
 }
