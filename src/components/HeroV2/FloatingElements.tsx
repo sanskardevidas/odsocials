@@ -4,8 +4,8 @@ import {
   Monitor,
   Cpu,
   BarChart3,
+  Instagram,
 } from "lucide-react";
-import MotionButton from "./Instagram/MotionButton";
 
 type FloatingElementsProps = {
   onInstagramEnter?: () => void;
@@ -21,7 +21,6 @@ export default function FloatingElements({
 }: FloatingElementsProps) {
   return (
     <div className="absolute inset-0 overflow-hidden pointer-events-none z-10">
-
       {/* Instagram */}
       <div
         className={`${common}
@@ -37,7 +36,23 @@ export default function FloatingElements({
           lg:top-[18%]
         `}
       >
-        <MotionButton />
+        <div
+          className="
+            flex
+            h-14
+            w-14
+            items-center
+            justify-center
+            rounded-2xl
+            border
+            border-black/10
+            bg-white/80
+            shadow-[0_12px_35px_rgba(0,0,0,0.12)]
+            backdrop-blur-md
+          "
+        >
+          <Instagram className="h-6 w-6 text-black" />
+        </div>
       </div>
 
       {/* Camera */}

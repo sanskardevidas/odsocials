@@ -3,7 +3,7 @@ import Background from "./Background";
 import Navbar from "./Navbar";
 import HeroText from "./HeroText";
 import Buttons from "./Buttons";
-import FloatingElements from "./FloatingElements/FloatingElements";
+import FloatingElements from "./FloatingElements";
 import HeroDrone from "./Drone";
 
 export default function Hero() {
