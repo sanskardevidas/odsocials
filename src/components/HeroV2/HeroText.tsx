@@ -1,8 +1,4 @@
-import {
-  forwardRef,
-  useEffect,
-  useState,
-} from "react";
+import { forwardRef, useEffect, useState } from "react";
 import { getShadow } from "./MouseShadow";
 
 function buildShadow(x: number, y: number) {
@@ -170,7 +166,7 @@ const HeroText = forwardRef<HTMLHeadingElement, Record<string, never>>(
         </p>
       </div>
     );
-  }
+  },
 );
 
 HeroText.displayName = "HeroText";

@@ -49,10 +49,7 @@ export default function Navbar() {
         >
           {/* Logo */}
 
-          <NavLink
-            to="/"
-            className="flex items-center gap-3 select-none"
-          >
+          <NavLink to="/" className="flex items-center gap-3 select-none">
             <div
               className="
                 flex
@@ -179,11 +176,7 @@ export default function Navbar() {
             onClick={() => setIsOpen(!isOpen)}
             className="lg:hidden text-black"
           >
-            {isOpen ? (
-              <X size={30} />
-            ) : (
-              <Menu size={30} />
-            )}
+            {isOpen ? <X size={30} /> : <Menu size={30} />}
           </button>
         </div>
       </header>
@@ -231,9 +224,7 @@ export default function Navbar() {
               onClick={() => setIsOpen(false)}
               className={({ isActive }) =>
                 `text-[28px] sm:text-[34px] font-semibold transition-colors duration-300 ${
-                  isActive
-                    ? "text-black"
-                    : "text-black hover:text-neutral-500"
+                  isActive ? "text-black" : "text-black hover:text-neutral-500"
                 }`
               }
             >

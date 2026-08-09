@@ -5,9 +5,11 @@
 /* =========================
    GLOBAL BASE
    ========================= */
-html, body, #root {
+html,
+body,
+#root {
   height: 100%;
-  background: #07070B;
+  background: #07070b;
   color: white;
 }
 
@@ -23,7 +25,9 @@ html, body, #root {
 }
 
 /* 2) App should always accept pointer events */
-#root, body, html {
+#root,
+body,
+html {
   pointer-events: auto !important;
 }
 
@@ -41,7 +45,12 @@ canvas {
 }
 
 /* 5) Ensure interactive elements ALWAYS clickable */
-a, button, input, textarea, select, label {
+a,
+button,
+input,
+textarea,
+select,
+label {
   pointer-events: auto !important;
 }
 /* =========================

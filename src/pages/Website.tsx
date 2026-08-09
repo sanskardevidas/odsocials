@@ -1,49 +1,49 @@
-import ContactSection from '../components/ContactSection';
-import { Layout, Zap, Search, Users, TrendingUp, Check } from 'lucide-react';
+import ContactSection from "../components/ContactSection";
+import { Layout, Zap, Search, Users, TrendingUp, Check } from "lucide-react";
 
 export default function Website() {
   const packages = [
     {
-      title: 'Essential Website',
-      badge: 'Credibility & presence',
+      title: "Essential Website",
+      badge: "Credibility & presence",
       popular: false,
       included: [
-        'Premium custom website (5–6 sections)',
-        'High-end UI/UX (desktop + mobile perfected)',
-        'Brand-consistent colors & typography',
-        'Contact / inquiry form',
-        'Basic SEO + fast loading',
-        'Secure deployment',
+        "Premium custom website (5–6 sections)",
+        "High-end UI/UX (desktop + mobile perfected)",
+        "Brand-consistent colors & typography",
+        "Contact / inquiry form",
+        "Basic SEO + fast loading",
+        "Secure deployment",
       ],
     },
     {
-      title: 'Growth Website',
-      badge: 'Lead generation & conversions',
+      title: "Growth Website",
+      badge: "Lead generation & conversions",
       popular: true,
- 
+
       included: [
-        'Everything in Essential Website',
-        'Conversion-focused layout & section flow',
-        'Lead capture forms (inquiry / quote / booking)',
-        'WhatsApp / Email integration',
-        'Automated inquiry flow (auto-reply + follow-up ready)',
-        'Analytics & tracking setup',
-        'CTA-driven sections for higher conversions',
+        "Everything in Essential Website",
+        "Conversion-focused layout & section flow",
+        "Lead capture forms (inquiry / quote / booking)",
+        "WhatsApp / Email integration",
+        "Automated inquiry flow (auto-reply + follow-up ready)",
+        "Analytics & tracking setup",
+        "CTA-driven sections for higher conversions",
       ],
     },
     {
-      title: 'Smart Website (AI-Powered)',
-      badge: 'Automation & scale',
+      title: "Smart Website (AI-Powered)",
+      badge: "Automation & scale",
       popular: false,
 
       included: [
-        'Everything in Growth Website',
-        'AI chat assistant for visitor support',
-        'Smart lead qualification (hot / warm / cold)',
-        'Automated follow-ups (WhatsApp / Email)',
-        'CRM-ready integration (Sheets / Notion / DB)',
-        'Advanced form → workflow logic',
-        'Scalable backend-ready setup',
+        "Everything in Growth Website",
+        "AI chat assistant for visitor support",
+        "Smart lead qualification (hot / warm / cold)",
+        "Automated follow-ups (WhatsApp / Email)",
+        "CRM-ready integration (Sheets / Notion / DB)",
+        "Advanced form → workflow logic",
+        "Scalable backend-ready setup",
       ],
     },
   ];
@@ -71,7 +71,9 @@ export default function Website() {
             </span>
           </h1>
 
-          <p className="text-2xl text-gray-400">Designed for performance, clarity, and scale.</p>
+          <p className="text-2xl text-gray-400">
+            Designed for performance, clarity, and scale.
+          </p>
         </div>
       </section>
 
@@ -79,35 +81,42 @@ export default function Website() {
       <section className="py-32 px-6 relative">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-20">
-            <h2 className="text-5xl md:text-6xl font-serif mb-12">What We Build</h2>
+            <h2 className="text-5xl md:text-6xl font-serif mb-12">
+              What We Build
+            </h2>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
             {[
               {
                 icon: Layout,
-                title: 'UI/UX Design',
-                description: 'Beautiful, intuitive interfaces that guide users toward action',
+                title: "UI/UX Design",
+                description:
+                  "Beautiful, intuitive interfaces that guide users toward action",
               },
               {
                 icon: Zap,
-                title: 'Website Development',
-                description: 'Fast, responsive websites built with modern technologies',
+                title: "Website Development",
+                description:
+                  "Fast, responsive websites built with modern technologies",
               },
               {
                 icon: TrendingUp,
-                title: 'Performance Optimisation',
-                description: 'Speed and efficiency that improves user experience and SEO',
+                title: "Performance Optimisation",
+                description:
+                  "Speed and efficiency that improves user experience and SEO",
               },
               {
                 icon: Search,
-                title: 'SEO-Ready Structure',
-                description: 'Technical foundations that help your site rank and get discovered',
+                title: "SEO-Ready Structure",
+                description:
+                  "Technical foundations that help your site rank and get discovered",
               },
               {
                 icon: Users,
-                title: 'Lead Capture Systems',
-                description: 'Strategic conversion points that turn visitors into customers',
+                title: "Lead Capture Systems",
+                description:
+                  "Strategic conversion points that turn visitors into customers",
               },
             ].map((service, index) => (
               <div
@@ -126,7 +135,9 @@ export default function Website() {
                   </div>
 
                   <h3 className="text-2xl font-serif mb-3">{service.title}</h3>
-                  <p className="text-gray-400 leading-relaxed">{service.description}</p>
+                  <p className="text-gray-400 leading-relaxed">
+                    {service.description}
+                  </p>
                 </div>
               </div>
             ))}
@@ -139,8 +150,9 @@ export default function Website() {
           <div className="space-y-6 text-xl text-gray-400 leading-relaxed">
             <p>A website is only as valuable as the system behind it.</p>
             <p>
-              We focus on the mechanics behind growth search visibility, conversion points, and structured flows that guide
-              visitors toward action. Everything is designed to evolve as your business grows.
+              We focus on the mechanics behind growth search visibility,
+              conversion points, and structured flows that guide visitors toward
+              action. Everything is designed to evolve as your business grows.
             </p>
           </div>
         </div>
@@ -150,8 +162,12 @@ export default function Website() {
       <section className="py-32 px-6 relative overflow-hidden">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-20">
-            <h2 className="text-5xl md:text-6xl font-serif mb-4">Website System</h2>
-            <p className="text-xl text-gray-400">Choose the level of system you want to build</p>
+            <h2 className="text-5xl md:text-6xl font-serif mb-4">
+              Website System
+            </h2>
+            <p className="text-xl text-gray-400">
+              Choose the level of system you want to build
+            </p>
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8 items-stretch">
@@ -159,10 +175,12 @@ export default function Website() {
               <div
                 key={idx}
                 className={[
-                  'relative rounded-3xl border backdrop-blur-xl transition-all duration-500',
-                  'bg-white/5 border-white/10 hover:bg-white/[0.07] hover:-translate-y-1',
-                  pkg.popular ? 'ring-1 ring-purple-500/40 shadow-[0_0_50px_rgba(168,85,247,0.20)]' : '',
-                ].join(' ')}
+                  "relative rounded-3xl border backdrop-blur-xl transition-all duration-500",
+                  "bg-white/5 border-white/10 hover:bg-white/[0.07] hover:-translate-y-1",
+                  pkg.popular
+                    ? "ring-1 ring-purple-500/40 shadow-[0_0_50px_rgba(168,85,247,0.20)]"
+                    : "",
+                ].join(" ")}
               >
                 {/* soft glow */}
                 <div className="absolute inset-0 rounded-3xl pointer-events-none">
@@ -185,9 +203,13 @@ export default function Website() {
                     {pkg.badge}
                   </div>
 
-                  <p className="text-gray-400 mb-8 leading-relaxed">{pkg.outcome}</p>
+                  <p className="text-gray-400 mb-8 leading-relaxed">
+                    {pkg.outcome}
+                  </p>
 
-                  <p className="text-sm tracking-widest text-gray-400 mb-4">INCLUDED</p>
+                  <p className="text-sm tracking-widest text-gray-400 mb-4">
+                    INCLUDED
+                  </p>
                   <ul className="space-y-3">
                     {pkg.included.map((item, i) => (
                       <li key={i} className="flex gap-3 text-gray-200">

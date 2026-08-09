@@ -22,20 +22,17 @@ const services = [
   },
   {
     title: "Meta & Google Ads",
-    description:
-      "Campaign setup, creatives, and optimization for better ROI.",
+    description: "Campaign setup, creatives, and optimization for better ROI.",
     tag: "Performance",
   },
   {
     title: "Content Calendars",
-    description:
-      "30-day social media content plans customized for your niche.",
+    description: "30-day social media content plans customized for your niche.",
     tag: "Systems",
   },
   {
     title: "Reels & Shorts Editing",
-    description:
-      "Short-form video edits tailored for reach & retention.",
+    description: "Short-form video edits tailored for reach & retention.",
     tag: "Video",
   },
 ];
@@ -415,7 +412,9 @@ function Footer() {
   return (
     <footer className="border-t border-white/5 mt-10">
       <div className="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-white/50">
-        <p>© {new Date().getFullYear()} OD Socials. We build brands that grow.</p>
+        <p>
+          © {new Date().getFullYear()} OD Socials. We build brands that grow.
+        </p>
         <div className="flex items-center gap-4">
           <a href="#" className="hover:text-[#00C16A]">
             Instagram

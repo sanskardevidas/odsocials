@@ -36,31 +36,31 @@ export default function Drone({ targetRef }: DroneProps) {
             maxTilt: 22,
           }
         : width < 1024
-        ? {
-            size: 180,
-            startX: -170,
-            endOffset: 180,
-            startY: 240,
-            arc: 95,
-            speed: 0.010,
-            maxTilt: 28,
-          }
-        : {
-            size: 260,
-            startX: -220,
-            endOffset: 260,
-            startY: 280,
-            arc: 150,
-            speed: 0.008,
-            maxTilt: 35,
-          };
+          ? {
+              size: 180,
+              startX: -170,
+              endOffset: 180,
+              startY: 240,
+              arc: 95,
+              speed: 0.01,
+              maxTilt: 28,
+            }
+          : {
+              size: 260,
+              startX: -220,
+              endOffset: 260,
+              startY: 280,
+              arc: 150,
+              speed: 0.008,
+              maxTilt: 35,
+            };
 
     imgRef.current.style.width = `${config.size}px`;
 
     const endX =
       width < 640
-      ? window.innerWidth * 0.72
-      : window.innerWidth - config.endOffset;
+        ? window.innerWidth * 0.72
+        : window.innerWidth - config.endOffset;
 
     const animate = () => {
       progress += config.speed;
@@ -71,14 +71,9 @@ export default function Drone({ targetRef }: DroneProps) {
       // Smooth easing
       const eased = 0.5 - Math.cos(progress * Math.PI) / 2;
 
-      const x =
-        config.startX +
-        (endX - config.startX) * eased;
+      const x = config.startX + (endX - config.startX) * eased;
 
-      const endDrop =
-        width < 640 ? 140 :
-        width < 1024 ? 90 :
-        60;
+      const endDrop = width < 640 ? 140 : width < 1024 ? 90 : 60;
       const y =
         config.startY -
         Math.sin(eased * Math.PI) * config.arc +
@@ -89,66 +84,47 @@ export default function Drone({ targetRef }: DroneProps) {
 
       // Heading target
 
-      const headingRect =
-        targetRef.current!.getBoundingClientRect();
+      const headingRect = targetRef.current!.getBoundingClientRect();
 
-      const targetX =
-        headingRect.left + headingRect.width * 0.82;
+      const targetX = headingRect.left + headingRect.width * 0.82;
 
-      const targetY =
-        headingRect.top + headingRect.height * 0.48;
+      const targetY = headingRect.top + headingRect.height * 0.48;
 
       // Drone position
 
-      const droneRect =
-        rotateRef.current!.getBoundingClientRect();
+      const droneRect = rotateRef.current!.getBoundingClientRect();
 
-      const droneX =
-        droneRect.left + droneRect.width / 2;
+      const droneX = droneRect.left + droneRect.width / 2;
 
-      const droneY =
-        droneRect.top + droneRect.height / 2;
+      const droneY = droneRect.top + droneRect.height / 2;
 
       const dx = targetX - droneX;
       const dy = targetY - droneY;
 
       // Previous position
 
-      const prevProgress = Math.max(
-        progress - config.speed,
-        0
-      );
+      const prevProgress = Math.max(progress - config.speed, 0);
 
-      const prevEase =
-        0.5 - Math.cos(prevProgress * Math.PI) / 2;
+      const prevEase = 0.5 - Math.cos(prevProgress * Math.PI) / 2;
 
-      const prevX =
-        config.startX +
-        (endX - config.startX) * prevEase;
+      const prevX = config.startX + (endX - config.startX) * prevEase;
 
-      const prevY =
-        config.startY -
-        Math.sin(prevEase * Math.PI) * config.arc;
+      const prevY = config.startY - Math.sin(prevEase * Math.PI) * config.arc;
 
-      const flightAngle =
-        Math.atan2(y - prevY, x - prevX) *
-        (180 / Math.PI);
+      const flightAngle = Math.atan2(y - prevY, x - prevX) * (180 / Math.PI);
 
-      const headingAngle =
-        Math.atan2(dy, dx) *
-        (180 / Math.PI);
+      const headingAngle = Math.atan2(dy, dx) * (180 / Math.PI);
 
       let diff = headingAngle - flightAngle;
 
       while (diff > 180) diff -= 360;
       while (diff < -180) diff += 360;
 
-      let finalAngle =
-        flightAngle + diff * 0.45;
+      let finalAngle = flightAngle + diff * 0.45;
 
       finalAngle = Math.max(
         -config.maxTilt,
-        Math.min(config.maxTilt, finalAngle)
+        Math.min(config.maxTilt, finalAngle),
       );
 
       rotateRef.current!.style.transform = `

@@ -12,8 +12,7 @@ type FloatingElementsProps = {
   onInstagramLeave?: () => void;
 };
 
-const common =
-  "absolute select-none text-black/70 transition-all duration-500";
+const common = "absolute select-none text-black/70 transition-all duration-500";
 
 export default function FloatingElements({
   onInstagramEnter,

@@ -1,11 +1,11 @@
-import ContactSection from '../components/ContactSection';
+import ContactSection from "../components/ContactSection";
 import {
   Instagram,
   Video,
   MessageSquare,
   TrendingUp,
   Calendar,
-} from 'lucide-react';
+} from "lucide-react";
 
 export default function SocialMedia() {
   return (
@@ -42,38 +42,42 @@ export default function SocialMedia() {
       <section className="py-32 px-6 relative">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-20">
-            <h2 className="text-5xl md:text-6xl font-serif mb-12">What We Do</h2>
+            <h2 className="text-5xl md:text-6xl font-serif mb-12">
+              What We Do
+            </h2>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
             {[
               {
                 icon: Instagram,
-                title: 'Content Creation',
+                title: "Content Creation",
                 description:
-                  'High-quality visual content designed to capture attention and build brand identity',
+                  "High-quality visual content designed to capture attention and build brand identity",
               },
               {
                 icon: Video,
-                title: 'Reels & Short-Form Videos',
-                description: 'Engaging video content optimized for maximum reach and engagement',
+                title: "Reels & Short-Form Videos",
+                description:
+                  "Engaging video content optimized for maximum reach and engagement",
               },
               {
                 icon: MessageSquare,
-                title: 'Captions & Storytelling',
+                title: "Captions & Storytelling",
                 description:
-                  'Compelling narratives that connect with your audience and drive action',
+                  "Compelling narratives that connect with your audience and drive action",
               },
               {
                 icon: TrendingUp,
-                title: 'Community Management',
-                description: 'Active engagement strategies to build loyal, responsive communities',
+                title: "Community Management",
+                description:
+                  "Active engagement strategies to build loyal, responsive communities",
               },
               {
                 icon: Calendar,
-                title: 'Growth Strategy & Planning',
+                title: "Growth Strategy & Planning",
                 description:
-                  'Data-driven planning to ensure consistent growth and brand visibility',
+                  "Data-driven planning to ensure consistent growth and brand visibility",
               },
             ].map((service, index) => (
               <div
@@ -91,7 +95,9 @@ export default function SocialMedia() {
                   </div>
 
                   <h3 className="text-2xl font-serif mb-3">{service.title}</h3>
-                  <p className="text-gray-400 leading-relaxed">{service.description}</p>
+                  <p className="text-gray-400 leading-relaxed">
+                    {service.description}
+                  </p>
                 </div>
               </div>
             ))}
@@ -114,65 +120,65 @@ export default function SocialMedia() {
           <div className="grid lg:grid-cols-3 gap-8 items-stretch">
             {[
               {
-                title: 'Foundation',
-                badge: 'For individuals & early-stage brands',
+                title: "Foundation",
+                badge: "For individuals & early-stage brands",
                 popular: false,
                 included: [
-                  'Strategy & Setup',
-                  'Platform setup & optimisation (2 platforms)',
-                  'Profile bio optimisation',
-                  'Brand tone & voice guideline',
-                  'Content direction & posting framework',
-                  'Competitor benchmark snapshot',
+                  "Strategy & Setup",
+                  "Platform setup & optimisation (2 platforms)",
+                  "Profile bio optimisation",
+                  "Brand tone & voice guideline",
+                  "Content direction & posting framework",
+                  "Competitor benchmark snapshot",
 
-                  'Content & Publishing',
-                  '8–10 posts per month',
-                  'Caption & hashtag system',
-                  'Posting & scheduling',
+                  "Content & Publishing",
+                  "8–10 posts per month",
+                  "Caption & hashtag system",
+                  "Posting & scheduling",
 
-                  'Ads & Insights',
-                  'Basic ads setup',
-                  'Monthly performance summary',
+                  "Ads & Insights",
+                  "Basic ads setup",
+                  "Monthly performance summary",
                 ],
               },
               {
-                title: 'Growth',
-                badge: 'Creators, coaches & service brands',
+                title: "Growth",
+                badge: "Creators, coaches & service brands",
                 popular: true,
                 included: [
-                  'Platform optimisation (3 platforms)',
-                  'Growth content calendar',
-                  '14–16 posts per month',
-                  'Reels & short-form strategy',
-                  'Audience interaction guidance',
-                  'Performance tracking & optimisation',
-                  'Monthly report with insights',
+                  "Platform optimisation (3 platforms)",
+                  "Growth content calendar",
+                  "14–16 posts per month",
+                  "Reels & short-form strategy",
+                  "Audience interaction guidance",
+                  "Performance tracking & optimisation",
+                  "Monthly report with insights",
                 ],
               },
               {
-                title: 'Authority',
-                badge: 'Scaling brands & businesses',
+                title: "Authority",
+                badge: "Scaling brands & businesses",
                 popular: false,
                 included: [
-                  'Platform optimisation (3–4 platforms)',
-                  'Brand storytelling & content pillars',
-                  '20–24 posts per month',
-                  'Short-form video focus strategy',
-                  'Community management system',
-                  'Scalable content workflow',
-                  'Monthly report with insights',
+                  "Platform optimisation (3–4 platforms)",
+                  "Brand storytelling & content pillars",
+                  "20–24 posts per month",
+                  "Short-form video focus strategy",
+                  "Community management system",
+                  "Scalable content workflow",
+                  "Monthly report with insights",
                 ],
               },
             ].map((pkg, idx) => (
               <div
                 key={idx}
                 className={[
-                  'relative rounded-3xl border backdrop-blur-xl transition-all duration-500',
-                  'bg-white/5 border-white/10 hover:bg-white/[0.07] hover:-translate-y-1',
+                  "relative rounded-3xl border backdrop-blur-xl transition-all duration-500",
+                  "bg-white/5 border-white/10 hover:bg-white/[0.07] hover:-translate-y-1",
                   pkg.popular
-                    ? 'ring-1 ring-purple-500/40 shadow-[0_0_50px_rgba(168,85,247,0.20)]'
-                    : '',
-                ].join(' ')}
+                    ? "ring-1 ring-purple-500/40 shadow-[0_0_50px_rgba(168,85,247,0.20)]"
+                    : "",
+                ].join(" ")}
               >
                 <div className="absolute inset-0 rounded-3xl pointer-events-none">
                   <div className="absolute -top-28 -left-24 w-72 h-72 bg-purple-600/10 blur-3xl rounded-full" />

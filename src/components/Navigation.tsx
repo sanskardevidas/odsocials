@@ -72,9 +72,9 @@ export default function Navigation() {
               hover:scale-110
               "
           >
-          {/* glow */}
-          <span
-            className="
+            {/* glow */}
+            <span
+              className="
               absolute inset-0
               rounded-full
               bg-purple-500/30
@@ -82,10 +82,10 @@ export default function Navigation() {
               opacity-60     
               pointer-events-none
               "
-          />
-          {/* logo holder */}
-          <div
-            className="
+            />
+            {/* logo holder */}
+            <div
+              className="
               w-10 h-10
               rounded-full      
               bg-white    
@@ -97,15 +97,15 @@ export default function Navigation() {
               hover:scale-105
               hover:shadow-[0_0_35px_rgba(255,255,255,0.28)]
               "
-          >
-            <img
-              src="/od-logo.png"    
-              alt="OD Socials"     
-              className="w-6 h-6 object-contain"     
-              draggable={false}
-            />
+            >
+              <img
+                src="/od-logo.png"
+                alt="OD Socials"
+                className="w-6 h-6 object-contain"
+                draggable={false}
+              />
+            </div>
           </div>
-        </div>
           {/* DESKTOP NAV */}
           <nav className="hidden md:flex items-center gap-8">
             <NavLink to="/" className={linkClass}>
@@ -136,7 +136,11 @@ export default function Navigation() {
               onClick={() => setOpen((v) => !v)}
               aria-label={open ? "Close menu" : "Open menu"}
             >
-              {open ? <X className="text-white" size={18} /> : <Menu className="text-white" size={18} />}
+              {open ? (
+                <X className="text-white" size={18} />
+              ) : (
+                <Menu className="text-white" size={18} />
+              )}
             </button>
           </div>
         </div>

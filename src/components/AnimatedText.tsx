@@ -6,7 +6,11 @@ interface AnimatedTextProps {
   delay?: number;
 }
 
-export default function AnimatedText({ text, className = "", delay = 0 }: AnimatedTextProps) {
+export default function AnimatedText({
+  text,
+  className = "",
+  delay = 0,
+}: AnimatedTextProps) {
   const words = text.split(" ");
 
   const container = {
@@ -38,7 +42,11 @@ export default function AnimatedText({ text, className = "", delay = 0 }: Animat
       className={`inline-block ${className}`}
     >
       {words.map((w, i) => (
-        <motion.span key={i} variants={word} className="inline-block mr-[0.25em]">
+        <motion.span
+          key={i}
+          variants={word}
+          className="inline-block mr-[0.25em]"
+        >
           {w}
         </motion.span>
       ))}

@@ -69,7 +69,6 @@ export default function Buttons() {
         "
       >
         Explore Systems
-
         <ArrowRight
           className="
             h-5
@@ -133,7 +132,6 @@ export default function Buttons() {
         "
       >
         Start a Project
-
         <ArrowRight
           className="
             h-5

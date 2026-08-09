@@ -149,15 +149,19 @@ export default function CursorGlow() {
 
       // Smooth follow only when we are not marked idle
       if (!isIdleRef.current) {
-        targetRef.current.x += (mouseRef.current.x - targetRef.current.x) * FOLLOW_EASE;
-        targetRef.current.y += (mouseRef.current.y - targetRef.current.y) * FOLLOW_EASE;
+        targetRef.current.x +=
+          (mouseRef.current.x - targetRef.current.x) * FOLLOW_EASE;
+        targetRef.current.y +=
+          (mouseRef.current.y - targetRef.current.y) * FOLLOW_EASE;
 
         // Add continuous points while active
         addInterpolatedPoints(targetRef.current.x, targetRef.current.y, now);
       }
 
       // Remove old points (2–3 sec)
-      trailRef.current = trailRef.current.filter((p) => now - p.timestamp < MAX_AGE_MS);
+      trailRef.current = trailRef.current.filter(
+        (p) => now - p.timestamp < MAX_AGE_MS,
+      );
 
       // Draw: older points weaker, newer stronger (multiplied by fadeMultiplier)
       const len = trailRef.current.length;
@@ -172,9 +176,8 @@ export default function CursorGlow() {
 
         const g = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, RADIUS);
         g.addColorStop(0.05, `rgba(168, 85, 247, ${opacity * 0.25})`); // purple
-        g.addColorStop(0.47, `rgba(59, 115, 225, ${opacity * 0.10})`); // blue
+        g.addColorStop(0.47, `rgba(59, 115, 225, ${opacity * 0.1})`); // blue
         g.addColorStop(1, `rgba(98, 55, 107, 0)`);
-
 
         ctx.fillStyle = g;
         ctx.fillRect(p.x - RADIUS, p.y - RADIUS, RADIUS * 2, RADIUS * 2);

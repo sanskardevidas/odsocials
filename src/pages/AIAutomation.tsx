@@ -1,48 +1,55 @@
-import ContactSection from '../components/ContactSection';
-import { Zap, Database, MessageCircle, BarChart3, Share2, Check } from 'lucide-react';
+import ContactSection from "../components/ContactSection";
+import {
+  Zap,
+  Database,
+  MessageCircle,
+  BarChart3,
+  Share2,
+  Check,
+} from "lucide-react";
 
 export default function AIAutomation() {
   const packages = [
     {
-      title: 'AI Assist System',
-      badge: 'Support & responsiveness',
+      title: "AI Assist System",
+      badge: "Support & responsiveness",
       popular: false,
 
       included: [
-        'AI chat assistant embedded on your website',
-        'Trained on company services, pages & FAQs',
-        'Real-time visitor conversations (24/7)',
-        'Structured enquiry capture (name, need, contact)',
-        'WhatsApp / Email escalation & handoff',
-        'Basic intent detection (support vs enquiry)',
+        "AI chat assistant embedded on your website",
+        "Trained on company services, pages & FAQs",
+        "Real-time visitor conversations (24/7)",
+        "Structured enquiry capture (name, need, contact)",
+        "WhatsApp / Email escalation & handoff",
+        "Basic intent detection (support vs enquiry)",
       ],
     },
     {
-      title: 'AI Lead Automation System',
-      badge: 'Sales & lead handling',
+      title: "AI Lead Automation System",
+      badge: "Sales & lead handling",
       popular: true,
       included: [
-        'Everything in AI Assist System',
-        'AI lead qualification (hot / warm / cold)',
-        'Smart forms with logic (quote / booking / enquiry)',
-        'Automated follow-ups (WhatsApp / Email)',
-        'Lead routing to sales/admin',
-        'CRM integration (Sheets / Notion / DB)',
-        'Pipeline status tracking (new, contacted, booked)',
+        "Everything in AI Assist System",
+        "AI lead qualification (hot / warm / cold)",
+        "Smart forms with logic (quote / booking / enquiry)",
+        "Automated follow-ups (WhatsApp / Email)",
+        "Lead routing to sales/admin",
+        "CRM integration (Sheets / Notion / DB)",
+        "Pipeline status tracking (new, contacted, booked)",
       ],
     },
     {
-      title: 'AI Business Automation System',
-      badge: 'Scale & operations',
+      title: "AI Business Automation System",
+      badge: "Scale & operations",
       popular: false,
       included: [
-        'Everything in AI Lead Automation System',
-        'Multi-agent setup (Sales, Support, Internal Ops)',
-        'Workflow automation (n8n-based)',
-        'Appointment booking + reminders',
-        'Tool + API integrations (CRM / Sheets / internal tools)',
-        'Dashboards / reporting-ready data flow',
-        'Scalable automation architecture',
+        "Everything in AI Lead Automation System",
+        "Multi-agent setup (Sales, Support, Internal Ops)",
+        "Workflow automation (n8n-based)",
+        "Appointment booking + reminders",
+        "Tool + API integrations (CRM / Sheets / internal tools)",
+        "Dashboards / reporting-ready data flow",
+        "Scalable automation architecture",
       ],
     },
   ];
@@ -70,7 +77,9 @@ export default function AIAutomation() {
             </span>
           </h1>
 
-          <p className="text-2xl text-gray-400">Smarter workflows. Less manual work.</p>
+          <p className="text-2xl text-gray-400">
+            Smarter workflows. Less manual work.
+          </p>
         </div>
       </section>
 
@@ -78,39 +87,42 @@ export default function AIAutomation() {
       <section className="py-32 px-6 relative">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-20">
-            <h2 className="text-5xl md:text-6xl font-serif mb-12">What We Automate</h2>
+            <h2 className="text-5xl md:text-6xl font-serif mb-12">
+              What We Automate
+            </h2>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
             {[
               {
                 icon: Zap,
-                title: 'Lead Capture Automation',
+                title: "Lead Capture Automation",
                 description:
-                  'Automatic lead collection and qualification systems that never miss an opportunity',
+                  "Automatic lead collection and qualification systems that never miss an opportunity",
               },
               {
                 icon: Database,
-                title: 'CRM Workflows',
+                title: "CRM Workflows",
                 description:
-                  'Streamlined customer relationship management that keeps your pipeline organized',
+                  "Streamlined customer relationship management that keeps your pipeline organized",
               },
               {
                 icon: MessageCircle,
-                title: 'WhatsApp & Email Automation',
+                title: "WhatsApp & Email Automation",
                 description:
-                  'Intelligent messaging systems that respond and engage automatically',
+                  "Intelligent messaging systems that respond and engage automatically",
               },
               {
                 icon: BarChart3,
-                title: 'Dashboards & Reporting',
+                title: "Dashboards & Reporting",
                 description:
-                  'Real-time insights and analytics that inform better business decisions',
+                  "Real-time insights and analytics that inform better business decisions",
               },
               {
                 icon: Share2,
-                title: 'Tool Integrations',
-                description: 'Seamless connections between your favorite tools and platforms',
+                title: "Tool Integrations",
+                description:
+                  "Seamless connections between your favorite tools and platforms",
               },
             ].map((service, index) => (
               <div
@@ -129,7 +141,9 @@ export default function AIAutomation() {
                   </div>
 
                   <h3 className="text-2xl font-serif mb-3">{service.title}</h3>
-                  <p className="text-gray-400 leading-relaxed">{service.description}</p>
+                  <p className="text-gray-400 leading-relaxed">
+                    {service.description}
+                  </p>
                 </div>
               </div>
             ))}
@@ -140,11 +154,15 @@ export default function AIAutomation() {
       <section className="py-32 px-6 relative">
         <div className="max-w-4xl mx-auto text-center">
           <div className="space-y-6 text-xl text-gray-400 leading-relaxed">
-            <p>Modern businesses don’t fail from lack of effort they fail from friction.</p>
             <p>
-              Manual follow-ups, missed leads, disconnected tools, and systems that don’t talk to each other. We replace
-              that friction with intelligent AI layersthat sit directly inside your business from first interaction to
-              final handoff.
+              Modern businesses don’t fail from lack of effort they fail from
+              friction.
+            </p>
+            <p>
+              Manual follow-ups, missed leads, disconnected tools, and systems
+              that don’t talk to each other. We replace that friction with
+              intelligent AI layersthat sit directly inside your business from
+              first interaction to final handoff.
             </p>
           </div>
         </div>
@@ -154,8 +172,12 @@ export default function AIAutomation() {
       <section className="py-32 px-6 relative overflow-hidden">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-20">
-            <h2 className="text-5xl md:text-6xl font-serif mb-4">AI Automation System</h2>
-            <p className="text-xl text-gray-400">Choose the level of AI system you want to deploy</p>
+            <h2 className="text-5xl md:text-6xl font-serif mb-4">
+              AI Automation System
+            </h2>
+            <p className="text-xl text-gray-400">
+              Choose the level of AI system you want to deploy
+            </p>
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8 items-stretch">
@@ -163,10 +185,12 @@ export default function AIAutomation() {
               <div
                 key={idx}
                 className={[
-                  'relative rounded-3xl border backdrop-blur-xl transition-all duration-500',
-                  'bg-white/5 border-white/10 hover:bg-white/[0.07] hover:-translate-y-1',
-                  pkg.popular ? 'ring-1 ring-purple-500/40 shadow-[0_0_50px_rgba(168,85,247,0.20)]' : '',
-                ].join(' ')}
+                  "relative rounded-3xl border backdrop-blur-xl transition-all duration-500",
+                  "bg-white/5 border-white/10 hover:bg-white/[0.07] hover:-translate-y-1",
+                  pkg.popular
+                    ? "ring-1 ring-purple-500/40 shadow-[0_0_50px_rgba(168,85,247,0.20)]"
+                    : "",
+                ].join(" ")}
               >
                 <div className="absolute inset-0 rounded-3xl pointer-events-none">
                   <div className="absolute -top-28 -left-24 w-72 h-72 bg-purple-600/10 blur-3xl rounded-full" />
@@ -188,9 +212,13 @@ export default function AIAutomation() {
                     {pkg.badge}
                   </div>
 
-                  <p className="text-gray-400 mb-8 leading-relaxed">{pkg.outcome}</p>
+                  <p className="text-gray-400 mb-8 leading-relaxed">
+                    {pkg.outcome}
+                  </p>
 
-                  <p className="text-sm tracking-widest text-gray-400 mb-4">INCLUDED</p>
+                  <p className="text-sm tracking-widest text-gray-400 mb-4">
+                    INCLUDED
+                  </p>
                   <ul className="space-y-3">
                     {pkg.included.map((item, i) => (
                       <li key={i} className="flex gap-3 text-gray-200">
