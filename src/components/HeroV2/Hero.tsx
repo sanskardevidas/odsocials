@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 import HeroText from "./HeroText";
 import Buttons from "./Buttons";
 import FloatingElements from "./FloatingElements";
-import HeroDrone from "./Drone";
+
 
 export default function Hero() {
   const headingRef = useRef<HTMLHeadingElement>(null);
@@ -36,11 +36,6 @@ export default function Hero() {
 
       {/* Decorative Icons */}
       <FloatingElements />
-
-      {/* Drone (Hidden on Mobile) */}
-      <div className="hidden md:block">
-        <HeroDrone targetRef={headingRef} />
-      </div>
 
       {/* Hero Content */}
       <div
